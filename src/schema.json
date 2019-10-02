@@ -1,0 +1,13 @@
+{
+  "id": "ng-builder-file-remover",
+  "title": "Angular builder - file remover",
+  "description": "Angular builder for removing files",
+  "properties": {
+    "files": {
+      "type": "array",
+      "default": [],
+      "alias": "f",
+      "description": "Files to remove"
+    }
+  }
+}

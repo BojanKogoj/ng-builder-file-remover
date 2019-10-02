@@ -1,0 +1,32 @@
+{
+  "name": "ng-builder-file-remover",
+  "description": "Angular 8+ builder for removing files",
+  "author": "Bojan Kogoj",
+  "version": "0.1.0",
+  "license": "ISC",
+  "repository": "https://github.com/BojanKogoj/ng-builder-file-remover",
+  "builders": "builders.json",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "builders.json"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.0"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run tsc && npm run copy",
+    "copy": "./node_modules/.bin/cpy src/schema.json dist",
+    "clean": "./node_modules/.bin/rimraf dist",
+    "tsc": "./node_modules/.bin/tsc"
+  },
+  "dependencies": {
+    "@angular-devkit/architect": "^0.803.7",
+    "@angular-devkit/build-angular": "^0.803.6",
+    "@angular/compiler": "^8.1.2",
+    "@angular/compiler-cli": "^8.1.2",
+    "cpy-cli": "^2.0.0",
+    "fs-extra": "^8.1.0",
+    "rimraf": "^3.0.0"
+  }
+}
