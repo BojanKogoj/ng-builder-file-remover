@@ -3,7 +3,7 @@
     "remove": {
       "implementation": "./dist",
       "schema": "./dist/schema.json",
-      "description": "Runs any command line in the operating system."
+      "description": "Removes specified files"
     }
   }
 }
