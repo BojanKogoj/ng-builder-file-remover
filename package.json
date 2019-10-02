@@ -4,21 +4,29 @@
   "author": "Bojan Kogoj",
   "version": "0.1.0",
   "license": "ISC",
-  "repository": "https://github.com/BojanKogoj/ng-builder-file-remover",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:BojanKogoj/ng-builder-file-remover.git"
+  },
+  "keywords": [
+    "angular",
+    "builder",
+    "file remover"
+  ],
   "builders": "builders.json",
   "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && npm run tsc && npm run copy",
+    "copy": "./node_modules/.bin/cpy src/schema.json dist",
+    "clean": "./node_modules/.bin/rimraf dist",
+    "tsc": "./node_modules/.bin/tsc"
+  },
   "files": [
     "dist",
     "builders.json"
   ],
   "devDependencies": {
     "@types/fs-extra": "^8.0.0"
-  },
-  "scripts": {
-    "build": "npm run clean && npm run tsc && npm run copy",
-    "copy": "./node_modules/.bin/cpy src/schema.json dist",
-    "clean": "./node_modules/.bin/rimraf dist",
-    "tsc": "./node_modules/.bin/tsc"
   },
   "dependencies": {
     "@angular-devkit/architect": "^0.803.7",
