@@ -2,11 +2,11 @@ import { createBuilder, BuilderContext, BuilderOutput } from '@angular-devkit/ar
 import { JsonObject } from '@angular-devkit/core';
 import * as fs from 'fs-extra';
 
-export interface Options {
+interface Options {
   files: string[];
 }
 
-export function _fileRemover(options: Options, context: BuilderContext): Promise<BuilderOutput> {
+function fileRemover(options: Options, context: BuilderContext): Promise<BuilderOutput> {
   return new Promise((resolve: any) => {
 
     const files = options.files;
@@ -41,4 +41,4 @@ export function _fileRemover(options: Options, context: BuilderContext): Promise
   });
 }
 
-export default createBuilder<Options & JsonObject>(_fileRemover);
+export default createBuilder<Options & JsonObject>(fileRemover);
