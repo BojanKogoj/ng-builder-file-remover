@@ -28,6 +28,15 @@ And run it
 ng run [project-name]:file-remover
 ```
 
+This should output something similar to
+```sh
+> ng run builder-example:file-remover
+Starting file removing
+Deleted todelete.txt
+Deleted random_folder
+✔ Removing files finished successfully
+```
+
 ## Development
 
 ```sh
