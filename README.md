@@ -59,7 +59,7 @@ For creating a new project simply use
 ng new remover-test-project
 ```
 
-Go inside the project and inside `angular.json` under architect add path locally to the project.
+Go inside the project and in `angular.json` under architect add local path to the project.
 
 ```json
 "file-remover": {
