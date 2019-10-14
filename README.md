@@ -1,4 +1,9 @@
-# Angular 8+ builder - file remover
+# [Angular 8+ builder - file remover](https://github.com/BojanKogoj/ng-builder-file-remover)
+
+![CircleCI](https://img.shields.io/circleci/build/github/BojanKogoj/ng-builder-file-remover?style=flat-square)
+![npm](https://img.shields.io/npm/v/ng-builder-file-remover?style=flat-square)
+![NPM](https://img.shields.io/npm/l/ng-builder-file-remover?style=flat-square)
+
 
 Angular builder that removes specified files and folders.
 
@@ -11,7 +16,7 @@ npm i -D ng-builder-file-remover
 ```
 
 In angular.json add configuration under architect
-```sh
+```json
 "file-remover": {
     "builder": "ng-builder-file-remover:remove",
     "options": {
