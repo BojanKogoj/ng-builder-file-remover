@@ -39,7 +39,36 @@ Deleted random_folder
 
 ## Development
 
+To build run
+
 ```sh
 npm install
 npm run build
+```
+
+For testing you need to use existing or create a new Angular 8+ project
+
+For creating a new project simply use
+
+```sh
+ng new remover-test-project
+```
+
+Go inside the project and inside `angular.json` under architect add path locally to the project.
+
+```json
+"file-remover": {
+    "builder": "../ng-builder-file-remover:remove",
+    "options": {
+        "files": [
+            "file.txt"
+        ]
+    }
+},
+```
+
+Run the command
+
+```sh
+ng run remover-test-project
 ```
