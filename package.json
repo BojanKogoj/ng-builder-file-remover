@@ -2,7 +2,7 @@
   "name": "ng-builder-file-remover",
   "description": "Angular 8+ builder for removing files",
   "author": "Bojan Kogoj",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",
