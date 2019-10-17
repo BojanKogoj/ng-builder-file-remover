@@ -1,7 +1,7 @@
 # [Angular 8+ builder - file remover](https://github.com/BojanKogoj/ng-builder-file-remover)
 
 ![CircleCI](https://img.shields.io/circleci/build/github/BojanKogoj/ng-builder-file-remover?style=flat-square)
-![npm](https://img.shields.io/npm/v/ng-builder-file-remover?style=flat-square)
+[![npm](https://img.shields.io/npm/v/ng-builder-file-remover?style=flat-square)](https://www.npmjs.com/package/ng-builder-file-remover)
 ![NPM](https://img.shields.io/npm/l/ng-builder-file-remover?style=flat-square)
 
 
@@ -75,5 +75,5 @@ Go inside the project and in `angular.json` under architect add local path to th
 Run the command
 
 ```sh
-ng run remover-test-project
+ng run remover-test-project:file-remover
 ```
