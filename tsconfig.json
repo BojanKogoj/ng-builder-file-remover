@@ -14,7 +14,7 @@
     "suppressImplicitAnyIndexErrors": true,
     "forceConsistentCasingInFileNames": true,
     "strictPropertyInitialization": false,
-    "strictNullChecks": false,
+    "strictNullChecks": true,
     "pretty": true,
     "sourceMap": true,
     "declaration": true,
@@ -29,6 +29,6 @@
   "compileOnSave": false,
   "buildOnSave": false,
   "files": [
-    "src/index.ts"
+    "src/file-remover.ts"
   ]
 }

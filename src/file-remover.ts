@@ -6,7 +6,7 @@ interface Options {
   files: string[];
 }
 
-function fileRemover(options: Options, context: BuilderContext): Promise<BuilderOutput> {
+async function fileRemover(options: Options, context: BuilderContext): Promise<BuilderOutput> {
   return new Promise((resolve: any) => {
 
     const files = options.files;

@@ -1,7 +1,7 @@
 {
   "builders": {
     "remove": {
-      "implementation": "./dist",
+      "implementation": "./dist/file-remover.js",
       "schema": "./dist/schema.json",
       "description": "Removes specified files"
     }

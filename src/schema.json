@@ -1,5 +1,6 @@
 {
-  "id": "ng-builder-file-remover",
+  "$schema": "http://json-schema.org/schema",
+  "$id": "ng-builder-file-remover",
   "title": "Angular builder - file remover",
   "description": "Angular builder for removing files",
   "properties": {
